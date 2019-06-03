@@ -16,11 +16,8 @@ let package = Package(
         )
     ],
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // https://github.com/Carthage/Carthage/issues/2752#issuecomment-479780573
-        .package(url: "https://github.com/Carthage/Carthage", .revision("c8ac06e106b6b61f907918bfb2b7a5c432de4678")),
         .package(url: "https://github.com/Carthage/Commandant", from: "0.15.0"),
-        .package(url: "https://github.com/tuist/xcodeproj", .exact("4.3.1"))
+        .package(url: "https://github.com/tuist/xcodeproj", from: "6.7.0")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -30,7 +27,7 @@ let package = Package(
             dependencies: ["CartPodCore"]),
         .target(
             name: "CartPodCore",
-            dependencies: ["CarthageKit", "Commandant", "xcproj"]),
+            dependencies: ["Commandant", "xcodeproj"]),
         .testTarget(
             name: "CartPodTests",
             dependencies: ["CartPodCore"]),
