@@ -3,6 +3,7 @@ import CartPodCore
 import Commandant
 
 let registry = CommandRegistry<CartPodError>()
+registry.register(VersionCommand())
 
 let helpCommand = HelpCommand(registry: registry)
 registry.register(helpCommand)

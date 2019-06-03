@@ -12,7 +12,7 @@ final class CartPodTests: XCTestCase {
             return
         }
 
-        let fooBinary = productsDirectory.appendingPathComponent("CartPod")
+        let fooBinary = productsDirectory.appendingPathComponent("cartpod")
 
         let process = Process()
         process.executableURL = fooBinary
@@ -27,18 +27,6 @@ final class CartPodTests: XCTestCase {
         let output = String(data: data, encoding: .utf8)
 
         XCTAssertEqual(output, "Hello, world!\n")
-    }
-
-    /// Returns path to the built products directory.
-    var productsDirectory: URL {
-      #if os(macOS)
-        for bundle in Bundle.allBundles where bundle.bundlePath.hasSuffix(".xctest") {
-            return bundle.bundleURL.deletingLastPathComponent()
-        }
-        fatalError("couldn't find the products directory")
-      #else
-        return Bundle.main.bundleURL
-      #endif
     }
 
     static var allTests = [

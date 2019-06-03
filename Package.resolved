@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "ANSITerminal",
+        "repositoryURL": "https://github.com/pakLebah/ANSITerminal",
+        "state": {
+          "branch": null,
+          "revision": "8e24fab68c660eca1244a95019ec69a11400d62b",
+          "version": "0.0.3"
+        }
+      },
+      {
         "package": "Commandant",
         "repositoryURL": "https://github.com/Carthage/Commandant",
         "state": {
@@ -20,8 +29,17 @@
         }
       },
       {
+        "package": "Curry",
+        "repositoryURL": "https://github.com/thoughtbot/Curry",
+        "state": {
+          "branch": null,
+          "revision": "4331dd50bc1db007db664a23f32e6f3df93d4e1a",
+          "version": "4.0.2"
+        }
+      },
+      {
         "package": "Nimble",
-        "repositoryURL": "https://github.com/Quick/Nimble.git",
+        "repositoryURL": "https://github.com/Quick/Nimble",
         "state": {
           "branch": null,
           "revision": "43304bf2b1579fd555f2fdd51742771c1e4f2b98",
@@ -39,7 +57,7 @@
       },
       {
         "package": "Quick",
-        "repositoryURL": "https://github.com/Quick/Quick.git",
+        "repositoryURL": "https://github.com/Quick/Quick",
         "state": {
           "branch": null,
           "revision": "94df9b449508344667e5afc7e80f8bcbff1e4c37",
@@ -53,6 +71,24 @@
           "branch": null,
           "revision": "f14ff47f45642aa5703900980b014c2e9394b6e5",
           "version": "0.9.0"
+        }
+      },
+      {
+        "package": "llbuild",
+        "repositoryURL": "https://github.com/apple/swift-llbuild.git",
+        "state": {
+          "branch": "master",
+          "revision": "3aeecb428d202afe15633266dc862de27feab723",
+          "version": null
+        }
+      },
+      {
+        "package": "SwiftPM",
+        "repositoryURL": "https://github.com/apple/swift-package-manager.git",
+        "state": {
+          "branch": "swift-DEVELOPMENT-SNAPSHOT-2019-03-04-a",
+          "revision": "916450f7e8a5aef13630edf9e6fc0b16ed9f5f65",
+          "version": null
         }
       },
       {
